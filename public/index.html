@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primary Page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <form>
+        <input type="text" tabindex="1" placeholder="input 1">
+        <input type="text" tabindex="2" placeholder="input 2">
+        <button type="button" tabindex="3">input 3</button>
+    </form>
+</div>
+
+<button id="myBtn" tabindex="4">Open Modal</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe src="remote_page.html" ></iframe>
+    </div>
+
+</div>
+
+<script type="application/javascript" src="modal.js" ></script>
+</body>
+</html>
