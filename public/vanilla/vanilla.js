@@ -1,5 +1,5 @@
 // Get the modal
-var modal = document.getElementById('myModal');
+var vanilla = document.getElementById('myModal');
 
 // Get the button that opens the modal
 var btn = document.getElementById('myBtn');
@@ -18,20 +18,20 @@ btn.onclick = function () {
             node.setAttribute('tabindex', '-1');
         }
     }
-    modal.style.display = 'block';
+    vanilla.style.display = 'block';
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     reverse();
-    modal.style.display = 'none';
+    vanilla.style.display = 'none';
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target === modal) {
+    if (event.target === vanilla) {
         reverse();
-        modal.style.display = 'none';
+        vanilla.style.display = 'none';
     }
 };
 
